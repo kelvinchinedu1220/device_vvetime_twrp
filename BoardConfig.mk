@@ -49,6 +49,7 @@ TARGET_KERNEL_CONFIG := aeon6755_66_m_defconfig
 TARGET_KERNEL_SOURCE := kernel/vvetime/aeon6755_66_m
 
 # Kernel - prebuilt
+TW_TARGET_NO_KERNEL := false
 TARGET_FORCE_PREBUILT_KERNEL := true
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
