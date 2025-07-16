@@ -5,6 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo omni_aeon6755_66_m-user
-add_lunch_combo omni_aeon6755_66_m-userdebug
 add_lunch_combo omni_aeon6755_66_m-eng
