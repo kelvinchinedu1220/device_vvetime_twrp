@@ -1,5 +1,3 @@
-/system          ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/system       flags=display=system
-/data            ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata     flags=display=data
 /cache           ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/cache        flags=display=cache
 /protect_f       ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect1     flags=display=protect_f
 /protect_s       ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect2     flags=display=protect_s
@@ -25,8 +23,6 @@ auto             vfat     /devices/soc/11270000.usb3_xhci*                      
 /md3img          emmc     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/md3img       flags=display=md3img
 /tee1            emmc     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/tee1         flags=display=tee1
 /tee2            emmc     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/tee2         flags=display=tee2
-
-# Other partitions
 /system 	ext4	/dev/block/platform/bootdevice/by-name/system
 /system_image	emmc	/dev/block/platform/bootdevice/by-name/system  flags=backup=1;flashimg=1
 /cache		ext4	/dev/block/platform/bootdevice/by-name/cache
