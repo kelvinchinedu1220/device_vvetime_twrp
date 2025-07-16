@@ -92,6 +92,9 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
+# Recovery fstab
+TARGET_RECOVERY_FSTAB :=  $(LOCAL_PATH)/recovery.fstab
+
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
@@ -117,5 +120,4 @@ TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_NO_SCREEN_BLANK := true
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB :=  $(LOCAL_PATH)/recovery/root/sbin/etc/recovery.fstab
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
