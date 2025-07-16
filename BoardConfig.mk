@@ -77,9 +77,22 @@ TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 ifeq ($(TW_INCLUDE_CRYPTO),true)
   TW_CRYPTO_FS_TYPE := "f2fs"
+  TW_CRYPTO_FS_TYPE := "ext4"
   TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
   TW_CRYPTO_MNT_POINT := "/data"
+  TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
 endif
+
+# storage
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+TW_DEFAULT_EXTERNAL_STORAGE := true
+
+# Debug
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
